@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aabheri Clicks</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            width: 100%;
+            background-color: black;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: 'Brush Script MT', cursive;
+            color: orangered;
+            margin-left: 20px;
+            animation: glow 1.5s infinite alternate;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 30px 20px 0 20px;
+        }
+        .container .heading{
+            width: 50%;
+            padding-bottom: 50px;
+        }
+        .container .heading h3{
+            font-size: 3em;
+            font-weight: bolder;
+            border-bottom: 4px solid #222;
+            color: orangered;
+        }
+        .container .heading h3 span{
+            font-weight: 100;
+        }
+        .container .box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            transition: 0.5s;
+            flex-wrap: wrap;
+        }
+        .container .box .dream{
+            display: flex;
+            flex-direction: column;
+            width: 32%;
+        }
+        .container .box .dream img {
+            width: 100%;
+            padding: 5px;
+            border-radius: 25px;
+            transition: transform 0.5s ease;
+        }
+        .container .box .dream img:hover {
+            transform: scale(1.3); 
+        }
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px orangered, 0 0 20px orangered, 0 0 30px orangered;
+            }
+            100% {
+                text-shadow: 0 0 20px orangered, 0 0 40px orangered, 0 0 60px orangered;
+            }
+        }
+        @media only screen and (max-width:600px){
+            .container .heading{
+                width: 100%;
+            }
+            .container .heading h3{
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+<body>   
+    <nav class="navbar">
+        <div class="logo">
+            Inku Baby
+        </div>
+    </nav>    
+    <div class="container">
+        <div class="heading">
+            <h3>Photo <span>Gallery</span></h3>
+        </div>
+        <div class="box">
+            <div class="dream">
+                <img src="./gallery/b1.JPG">
+                <img src="./gallery/b2.JPG">
+                <img src="./gallery/b3.JPG">
+                <img src="./gallery/b10.JPG">
+                <img src="./gallery/b25new.JPG">
+                <img src="./gallery/b5.JPG">
+                <img src="./gallery/b26.JPG">
+                <img src="./gallery/b12new.JPG">
+            </div>
+            <div class="dream">
+                <img src="./gallery/b7.JPG">
+                <img src="./gallery/b8.JPG">
+                <img src="./gallery/b20new.jpg">
+                <img src="./gallery/b4.JPG">
+                <img src="./gallery/b11new.JPG">
+                <img src="./gallery/b24new2.JPG">
+            </div>
+            <div class="dream">
+                <img src="./gallery/b18.JPG">
+                <img src="./gallery/b14.JPG">
+                <img src="./gallery/b15new.JPG">
+                <img src="./gallery/b13.JPG">
+                <img src="./gallery/b16.JPG">
+                <img src="./gallery/b22.JPG">   
+            </div>
+        </div>
+    </div>
+</body>
+</html>
